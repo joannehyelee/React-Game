@@ -54,19 +54,30 @@ const characters = [
 class Game extends React.Component {
 
     state = {
-        score: 0
+        score: 0,
+        game: []
     };
 
     handleClick = event => {
-        // alert("HI");
-        this.setState({ score: this.state.score + 1 });
+
+        this.setState({ 
+            score: this.state.score + 1,
+            game: this.state.id
+        });
+
     };
+
+    // If user clicks on same image, set score back to 0
+        // Get the id of the image clicked 
+    // That score is set to top score
+
 
     render() {
         return (
             <div>
                 <Score 
                     score={this.state.score}
+                    game={this.state.game}
                 />
                 <Header />
                 <Character 

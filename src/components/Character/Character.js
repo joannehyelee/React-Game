@@ -6,13 +6,14 @@ import { Nav, NavItem } from "reactstrap";
 const Character = props => (
     <Container>
         <Row>
-            <Col>
+            <Col className="text-center">
                 {props.characters.map(item => (
                 <Card>
                     <CardImg
                         src={item.image}
                         alt={item.name}
                         key={item.id}
+                        id={item.id}
                         onClick={props.handleClick}
                     />
                 </Card>
