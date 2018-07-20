@@ -53,12 +53,26 @@ const characters = [
 
 class Game extends React.Component {
 
+    state = {
+        score: 0
+    };
+
+    handleClick = event => {
+        // alert("HI");
+        this.setState({ score: this.state.score + 1 });
+    };
+
     render() {
         return (
             <div>
-                <Score />
+                <Score 
+                    score={this.state.score}
+                />
                 <Header />
-                <Character characters={characters} />
+                <Character 
+                    characters={characters}
+                    handleClick={this.handleClick} 
+                />
             </div>
         );
     }
