@@ -1,0 +1,9 @@
+.card {
+    display:inline-block !important;
+    width: 30%;
+    margin: 5px;
+}
+
+.container {
+    margin-bottom: 30px;
+}
