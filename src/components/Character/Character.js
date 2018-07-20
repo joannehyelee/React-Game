@@ -1,6 +1,7 @@
 import React from "react";
 import "./Character.css";
 import { Container, Row, Col, Card, CardImg } from "reactstrap";
+import { Nav, NavItem } from "reactstrap";
 
 const Character = props => (
     <Container>
@@ -12,6 +13,7 @@ const Character = props => (
                         src={item.image}
                         alt={item.name}
                         key={item.id}
+                        onClick={props.handleClick}
                     />
                 </Card>
                 ))}

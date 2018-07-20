@@ -5,5 +5,14 @@
 }
 
 .container {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    padding: 1.5em;
 }
+
+.nav {
+    background: #05C194;
+    padding: 1.5em !important;
+    color: #ffffff !important;
+    font-size: 1.5em;
+}
+

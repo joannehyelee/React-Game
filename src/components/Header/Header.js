@@ -6,7 +6,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="text-center">
                 <Jumbotron>
                     <h1>Clicky Game</h1>
                 </Jumbotron>
